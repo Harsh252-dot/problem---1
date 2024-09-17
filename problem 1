@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEO Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .name {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .title {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .company-logo img {
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Founder & CEO Layout</h1>
+
+    <div class="container">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg" alt="Vijay Shekhar Sharma">
+            <div class="name">Vijay Shekhar Sharma</div>
+            <div class="title">Founder & CEO</div>
+            <div class="company-logo">
+                <img src="data:image/jpeg;base64,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" alt="Paytm">
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png" alt="Kunal Shah">
+            <div class="name">Kunal Shah</div>
+            <div class="title">Founder</div>
+            <div class="company-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Cred_Logo.png" alt="CRED">
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg" alt="Amrish Rau">
+            <div class="name">Amrish Rau</div>
+            <div class="title">CEO</div>
+            <div class="company-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Pine_Labs_logo.png" alt="Pine Labs">
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg" alt="Sampad Swain">
+            <div class="name">Sampad Swain</div>
+            <div class="title">Co-Founder & CEO</div>
+            <div class="company-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Instamojo_Logo.png" alt="Instamojo">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
